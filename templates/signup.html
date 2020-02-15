@@ -1,0 +1,39 @@
+{% extends "baseof.html" %}
+
+{% block content %}
+
+    <div class="content">
+
+        <section class="container centered">
+        <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.username.label }}<br>
+            {{ form.username(size=32) }}<br>
+        </p>
+        <p>
+            {{ form.email.label }}<br>
+            {{ form.email(size=64) }}<br>
+        </p>
+        <p>
+            {{ form.password.label }}<br>
+            {{ form.password(size=32) }}<br>
+        </p>
+            <p>
+            {{ form.age.label }}<br>
+            {{ form.age(size=32) }}<br>
+        </p>
+                        <p>
+            {{ form.weight.label }}<br>
+            {{ form.weight(size=32) }}<br>
+        </p>
+         <p>
+            {{ form.height.label }}<br>
+            {{ form.height(size=32) }}<br>
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+
+        </section>
+            </div>
+{% endblock %}

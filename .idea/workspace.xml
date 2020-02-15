@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d67dc63-1318-4c5b-8cec-ae7bdc2fadec" name="Default Changelist" comment="" />
+    <list default="true" id="0d67dc63-1318-4c5b-8cec-ae7bdc2fadec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/alembic.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/script.py.mako" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/d8bd9dee22eb_users_table.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/baseof.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/baseof.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/single.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +34,12 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="app" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -30,15 +51,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XpoTQb8UVpQf5H7HGlx1MAYy5S" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -103,7 +130,7 @@
       <updated>1581752403292</updated>
       <workItem from="1581752412876" duration="2601000" />
       <workItem from="1581783871393" duration="1384000" />
-      <workItem from="1581786773677" duration="6382000" />
+      <workItem from="1581786773677" duration="13401000" />
     </task>
     <servers />
   </component>
@@ -115,34 +142,38 @@
       <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state x="605" y="248" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.977@0.23.1680.977" timestamp="1581792307670" />
-    <state width="1358" height="250" key="GridCell.Tab.0.bottom" timestamp="1581794747463">
+    <state width="1358" height="250" key="GridCell.Tab.0.bottom" timestamp="1581803811766">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state width="1358" height="250" key="GridCell.Tab.0.bottom/0.23.1680.976@0.23.1680.976" timestamp="1581776543740" />
-    <state width="1358" height="250" key="GridCell.Tab.0.bottom/0.23.1680.977@0.23.1680.977" timestamp="1581794747463" />
+    <state width="1358" height="250" key="GridCell.Tab.0.bottom/0.23.1680.977@0.23.1680.977" timestamp="1581803811766" />
     <state width="1358" height="250" key="GridCell.Tab.0.bottom/0.23.1680.978@0.23.1680.978" timestamp="1581786629910" />
     <state width="1358" height="250" key="GridCell.Tab.0.bottom/0.23.1680.979@0.23.1680.979" timestamp="1581785169347" />
-    <state width="1358" height="250" key="GridCell.Tab.0.center" timestamp="1581794747462">
+    <state width="1358" height="250" key="GridCell.Tab.0.center" timestamp="1581803811765">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state width="1358" height="250" key="GridCell.Tab.0.center/0.23.1680.976@0.23.1680.976" timestamp="1581776543739" />
-    <state width="1358" height="250" key="GridCell.Tab.0.center/0.23.1680.977@0.23.1680.977" timestamp="1581794747462" />
+    <state width="1358" height="250" key="GridCell.Tab.0.center/0.23.1680.977@0.23.1680.977" timestamp="1581803811765" />
     <state width="1358" height="250" key="GridCell.Tab.0.center/0.23.1680.978@0.23.1680.978" timestamp="1581786629909" />
     <state width="1358" height="250" key="GridCell.Tab.0.center/0.23.1680.979@0.23.1680.979" timestamp="1581785169346" />
-    <state width="1358" height="250" key="GridCell.Tab.0.left" timestamp="1581794747462">
+    <state width="1358" height="250" key="GridCell.Tab.0.left" timestamp="1581803811764">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state width="1358" height="250" key="GridCell.Tab.0.left/0.23.1680.976@0.23.1680.976" timestamp="1581776543738" />
-    <state width="1358" height="250" key="GridCell.Tab.0.left/0.23.1680.977@0.23.1680.977" timestamp="1581794747462" />
+    <state width="1358" height="250" key="GridCell.Tab.0.left/0.23.1680.977@0.23.1680.977" timestamp="1581803811764" />
     <state width="1358" height="250" key="GridCell.Tab.0.left/0.23.1680.978@0.23.1680.978" timestamp="1581786629909" />
     <state width="1358" height="250" key="GridCell.Tab.0.left/0.23.1680.979@0.23.1680.979" timestamp="1581785169345" />
-    <state width="1358" height="250" key="GridCell.Tab.0.right" timestamp="1581794747463">
+    <state width="1358" height="250" key="GridCell.Tab.0.right" timestamp="1581803811765">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state width="1358" height="250" key="GridCell.Tab.0.right/0.23.1680.976@0.23.1680.976" timestamp="1581776543739" />
-    <state width="1358" height="250" key="GridCell.Tab.0.right/0.23.1680.977@0.23.1680.977" timestamp="1581794747463" />
+    <state width="1358" height="250" key="GridCell.Tab.0.right/0.23.1680.977@0.23.1680.977" timestamp="1581803811765" />
     <state width="1358" height="250" key="GridCell.Tab.0.right/0.23.1680.978@0.23.1680.978" timestamp="1581786629910" />
     <state width="1358" height="250" key="GridCell.Tab.0.right/0.23.1680.979@0.23.1680.979" timestamp="1581785169346" />
+    <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1581795794930">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state width="239" height="457" key="HiddenNamespacesPopup/0.23.1680.977@0.23.1680.977" timestamp="1581795794930" />
     <state x="341" y="150" key="SettingsEditor" timestamp="1581792353278">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
@@ -153,6 +184,6 @@
     <state x="517" y="344" key="com.intellij.ide.util.TipDialog/0.23.1680.977@0.23.1680.977" timestamp="1581786917274" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/hackthevalley4$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1581794747452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/hackthevalley4$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1581803811757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

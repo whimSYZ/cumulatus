@@ -1,5 +1,18 @@
-{% extends "base.html" %}
+{% extends "baseof.html" %}
 
 {% block content %}
-    <h1>Hi, {{ current_user.username }}!</h1>
+
+    <div class="content">
+  <section class="container page">
+  <article>
+    <header>
+       <h1>Hi, {{ user.username }}</h1>
+    </header>
+    <hr>
+      <h5>Age: {{ user.age }}</h5>
+      <h5>Weight: {{ user.weight }}</h5>
+      <h5>Height: {{ user.height }}</h5>
+  </article>
+  </section>
+    </div>
 {% endblock %}

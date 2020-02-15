@@ -6,30 +6,37 @@
 
     <link rel="stylesheet" href="/static/main.css" />
     <title>Cumulatus</title>
-    <link rel="canonical" href="http://yuanzheshi.com/404.html">
+    <link rel="canonical" href="/404.html">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link rel="stylesheet" href="http://yuanzheshi.com/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+
 </head>
 <body>
     <nav class="navigation">
   <section class="container">
 
     <a class="navigation-title" href="/">
-        <img src="static/cumulatus.svg" width="20" height="20"/>
+        <img src="/static/cumulatus.svg" width="20" height="20"/>
       cumulatus
     </a>
     <input type="checkbox" id="menu-toggle" />
     <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
     <ul class="navigation-list">
 
-          <li class="navigation-item">
-            <a class="navigation-link" href="/signup">Sign Up</a>
-          </li>
+
 
           <li class="navigation-item">
-            <a class="navigation-link" href="/login">Login</a>
+              {% if current_user.is_anonymous %}
+                  <a class="navigation-link" href="/signup">Sign Up</a>
+                    <a class="navigation-link" href="/login">Login</a>
+              {% else %}
+                    <a class="navigation-link" href="/logout">Logout</a>
+              {% endif %}
           </li>
     </ul>
   </section>
