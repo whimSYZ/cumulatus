@@ -1,0 +1,12 @@
+{{ define "title" }}
+  {{ .Title }} · {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+  {{ partial "page.html" . }}
+{{ end }}
+{{ define "gallery" }}
+  {{ partial "gallery.html" . }}
+{{ end }}
+{{ define "list" }}
+  {{ partial "list.html" . }}
+{{ end }}

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0d67dc63-1318-4c5b-8cec-ae7bdc2fadec" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XpoTQb8UVpQf5H7HGlx1MAYy5S" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/static" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Flask server.Flask (app.py)">
+    <configuration name="Flask (app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <module name="hackthevalley4" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="hackthevalley4" type="Python.FlaskServer">
+      <module name="hackthevalley4" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flask server.Flask (app.py)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d67dc63-1318-4c5b-8cec-ae7bdc2fadec" name="Default Changelist" comment="" />
+      <created>1581752403292</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581752403292</updated>
+      <workItem from="1581752412876" duration="2601000" />
+      <workItem from="1581783871393" duration="1384000" />
+      <workItem from="1581786773677" duration="6382000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="605" y="248" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1581792307670">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state x="605" y="248" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.977@0.23.1680.977" timestamp="1581792307670" />
+    <state width="1358" height="250" key="GridCell.Tab.0.bottom" timestamp="1581794747463">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state width="1358" height="250" key="GridCell.Tab.0.bottom/0.23.1680.976@0.23.1680.976" timestamp="1581776543740" />
+    <state width="1358" height="250" key="GridCell.Tab.0.bottom/0.23.1680.977@0.23.1680.977" timestamp="1581794747463" />
+    <state width="1358" height="250" key="GridCell.Tab.0.bottom/0.23.1680.978@0.23.1680.978" timestamp="1581786629910" />
+    <state width="1358" height="250" key="GridCell.Tab.0.bottom/0.23.1680.979@0.23.1680.979" timestamp="1581785169347" />
+    <state width="1358" height="250" key="GridCell.Tab.0.center" timestamp="1581794747462">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state width="1358" height="250" key="GridCell.Tab.0.center/0.23.1680.976@0.23.1680.976" timestamp="1581776543739" />
+    <state width="1358" height="250" key="GridCell.Tab.0.center/0.23.1680.977@0.23.1680.977" timestamp="1581794747462" />
+    <state width="1358" height="250" key="GridCell.Tab.0.center/0.23.1680.978@0.23.1680.978" timestamp="1581786629909" />
+    <state width="1358" height="250" key="GridCell.Tab.0.center/0.23.1680.979@0.23.1680.979" timestamp="1581785169346" />
+    <state width="1358" height="250" key="GridCell.Tab.0.left" timestamp="1581794747462">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state width="1358" height="250" key="GridCell.Tab.0.left/0.23.1680.976@0.23.1680.976" timestamp="1581776543738" />
+    <state width="1358" height="250" key="GridCell.Tab.0.left/0.23.1680.977@0.23.1680.977" timestamp="1581794747462" />
+    <state width="1358" height="250" key="GridCell.Tab.0.left/0.23.1680.978@0.23.1680.978" timestamp="1581786629909" />
+    <state width="1358" height="250" key="GridCell.Tab.0.left/0.23.1680.979@0.23.1680.979" timestamp="1581785169345" />
+    <state width="1358" height="250" key="GridCell.Tab.0.right" timestamp="1581794747463">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state width="1358" height="250" key="GridCell.Tab.0.right/0.23.1680.976@0.23.1680.976" timestamp="1581776543739" />
+    <state width="1358" height="250" key="GridCell.Tab.0.right/0.23.1680.977@0.23.1680.977" timestamp="1581794747463" />
+    <state width="1358" height="250" key="GridCell.Tab.0.right/0.23.1680.978@0.23.1680.978" timestamp="1581786629910" />
+    <state width="1358" height="250" key="GridCell.Tab.0.right/0.23.1680.979@0.23.1680.979" timestamp="1581785169346" />
+    <state x="341" y="150" key="SettingsEditor" timestamp="1581792353278">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state x="341" y="150" key="SettingsEditor/0.23.1680.977@0.23.1680.977" timestamp="1581792353278" />
+    <state x="517" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1581786917274">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state x="517" y="344" key="com.intellij.ide.util.TipDialog/0.23.1680.977@0.23.1680.977" timestamp="1581786917274" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/hackthevalley4$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1581794747452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
