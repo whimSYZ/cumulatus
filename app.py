@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, flash, redirect, url_for
+from flask import Flask, render_template, request, flash, redirect, url_for, send_file
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, BooleanField, SubmitField
 from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
@@ -7,7 +7,7 @@ from flask_migrate import Migrate
 from flask_login import LoginManager, UserMixin, current_user, login_user, logout_user, login_required
 from config import Config
 from datetime import datetime
-from core import displayData
+
 
 app = Flask(__name__)
 
@@ -42,7 +42,7 @@ class User(UserMixin, db.Model):
 
 class History(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    time = db.Column(db.DateTime, index=True, default=datetime.now())
+    time = db.Column(db.Integer, index=True, default=datetime.now())
     weight = db.Column(db.Integer)
     set = db.Column(db.Integer)
     reps = db.Column(db.Integer)
@@ -50,9 +50,9 @@ class History(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
     def __repr__(self):
-        return '<History {}>'.format(self.time)
+        return '<History {}>'.format(self.id)
 
-
+import core
 
 class RegisterForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
@@ -73,11 +73,13 @@ class LoginForm(FlaskForm):
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    data = db.session.query(History).all()
-    flash(data)
-    flash(displayData(data))
     return render_template('index.html')
 
+@app.route('/personal.png')
+def main_plot():
+    """The view for rendering the scatter chart"""
+    img = core.get_image()
+    return send_file(img, mimetype='image/png', cache_timeout=0)
 
 @app.errorhandler(404)
 def page_not_found(e):
