@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d67dc63-1318-4c5b-8cec-ae7bdc2fadec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/hackthevalley4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hackthevalley4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/alembic.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/script.py.mako" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/642e2534bf10_users_table.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +33,31 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="app" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="app" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="app" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="app" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="history: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="app" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="user: table" type="3d80ac25:SqliteImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -58,6 +83,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -68,7 +94,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -147,7 +173,9 @@
       <updated>1581752403292</updated>
       <workItem from="1581752412876" duration="2601000" />
       <workItem from="1581783871393" duration="1384000" />
-      <workItem from="1581786773677" duration="16251000" />
+      <workItem from="1581786773677" duration="16775000" />
+      <workItem from="1581822645020" duration="693000" />
+      <workItem from="1581823353485" duration="2097000" />
     </task>
     <servers />
   </component>
@@ -155,52 +183,60 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="378" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581823617288">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state x="378" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.977@0.23.1680.977" timestamp="1581823617288" />
     <state x="605" y="248" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1581792307670">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state x="605" y="248" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.977@0.23.1680.977" timestamp="1581792307670" />
-    <state width="1358" height="250" key="GridCell.Tab.0.bottom" timestamp="1581815716098">
+    <state width="1358" height="310" key="GridCell.Tab.0.bottom" timestamp="1581824741834">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state width="1358" height="250" key="GridCell.Tab.0.bottom/0.23.1680.976@0.23.1680.976" timestamp="1581776543740" />
-    <state width="1358" height="250" key="GridCell.Tab.0.bottom/0.23.1680.977@0.23.1680.977" timestamp="1581815716098" />
+    <state width="1358" height="310" key="GridCell.Tab.0.bottom/0.23.1680.977@0.23.1680.977" timestamp="1581824741834" />
     <state width="1358" height="250" key="GridCell.Tab.0.bottom/0.23.1680.978@0.23.1680.978" timestamp="1581786629910" />
     <state width="1358" height="250" key="GridCell.Tab.0.bottom/0.23.1680.979@0.23.1680.979" timestamp="1581785169347" />
-    <state width="1358" height="250" key="GridCell.Tab.0.center" timestamp="1581815716097">
+    <state width="1358" height="310" key="GridCell.Tab.0.center" timestamp="1581824741833">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state width="1358" height="250" key="GridCell.Tab.0.center/0.23.1680.976@0.23.1680.976" timestamp="1581776543739" />
-    <state width="1358" height="250" key="GridCell.Tab.0.center/0.23.1680.977@0.23.1680.977" timestamp="1581815716097" />
+    <state width="1358" height="310" key="GridCell.Tab.0.center/0.23.1680.977@0.23.1680.977" timestamp="1581824741833" />
     <state width="1358" height="250" key="GridCell.Tab.0.center/0.23.1680.978@0.23.1680.978" timestamp="1581786629909" />
     <state width="1358" height="250" key="GridCell.Tab.0.center/0.23.1680.979@0.23.1680.979" timestamp="1581785169346" />
-    <state width="1358" height="250" key="GridCell.Tab.0.left" timestamp="1581815716096">
+    <state width="1358" height="310" key="GridCell.Tab.0.left" timestamp="1581824741832">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state width="1358" height="250" key="GridCell.Tab.0.left/0.23.1680.976@0.23.1680.976" timestamp="1581776543738" />
-    <state width="1358" height="250" key="GridCell.Tab.0.left/0.23.1680.977@0.23.1680.977" timestamp="1581815716096" />
+    <state width="1358" height="310" key="GridCell.Tab.0.left/0.23.1680.977@0.23.1680.977" timestamp="1581824741832" />
     <state width="1358" height="250" key="GridCell.Tab.0.left/0.23.1680.978@0.23.1680.978" timestamp="1581786629909" />
     <state width="1358" height="250" key="GridCell.Tab.0.left/0.23.1680.979@0.23.1680.979" timestamp="1581785169345" />
-    <state width="1358" height="250" key="GridCell.Tab.0.right" timestamp="1581815716097">
+    <state width="1358" height="310" key="GridCell.Tab.0.right" timestamp="1581824741834">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state width="1358" height="250" key="GridCell.Tab.0.right/0.23.1680.976@0.23.1680.976" timestamp="1581776543739" />
-    <state width="1358" height="250" key="GridCell.Tab.0.right/0.23.1680.977@0.23.1680.977" timestamp="1581815716097" />
+    <state width="1358" height="310" key="GridCell.Tab.0.right/0.23.1680.977@0.23.1680.977" timestamp="1581824741834" />
     <state width="1358" height="250" key="GridCell.Tab.0.right/0.23.1680.978@0.23.1680.978" timestamp="1581786629910" />
     <state width="1358" height="250" key="GridCell.Tab.0.right/0.23.1680.979@0.23.1680.979" timestamp="1581785169346" />
-    <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1581795794930">
+    <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1581822847707">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state width="239" height="457" key="HiddenNamespacesPopup/0.23.1680.977@0.23.1680.977" timestamp="1581795794930" />
-    <state x="341" y="150" key="SettingsEditor" timestamp="1581806725864">
+    <state width="239" height="457" key="HiddenNamespacesPopup/0.23.1680.977@0.23.1680.977" timestamp="1581822847707" />
+    <state x="341" y="150" key="SettingsEditor" timestamp="1581822818133">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state x="341" y="150" key="SettingsEditor/0.23.1680.977@0.23.1680.977" timestamp="1581806725864" />
-    <state x="517" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1581786917274">
+    <state x="341" y="150" key="SettingsEditor/0.23.1680.977@0.23.1680.977" timestamp="1581822818133" />
+    <state x="514" y="203" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1581822762228">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state x="517" y="344" key="com.intellij.ide.util.TipDialog/0.23.1680.977@0.23.1680.977" timestamp="1581786917274" />
+    <state x="514" y="203" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1680.977@0.23.1680.977" timestamp="1581822762228" />
+    <state x="517" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1581823353201">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state x="517" y="344" key="com.intellij.ide.util.TipDialog/0.23.1680.977@0.23.1680.977" timestamp="1581823353201" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/hackthevalley4$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1581815716085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/hackthevalley4$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1581824741428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

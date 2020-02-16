@@ -27,7 +27,7 @@ class User(UserMixin, db.Model):
     height = db.Column(db.Integer)
     volume = db.Column(db.Integer)
 
-    histories = db.relationship('History')
+    histories = db.relationship('History', backref='user')
 
     def set_password(self, password):
         self.password = password
@@ -38,11 +38,12 @@ class User(UserMixin, db.Model):
     def __repr__(self):
         return '<User {}>'.format(self.username)
 
+
 class History(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     time = db.Column(db.DateTime, index=True, default=datetime.now())
     weight = db.Column(db.Integer)
-    set = db.Column(db.String(128))
+    set = db.Column(db.Integer)
     reps = db.Column(db.Integer)
     weights = db.Column(db.Integer)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
