@@ -6,8 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_login import LoginManager, UserMixin, current_user, login_user, logout_user, login_required
 from config import Config
-
-import os
+from datetime import datetime
 
 app = Flask(__name__)
 
@@ -26,10 +25,9 @@ class User(UserMixin, db.Model):
     age = db.Column(db.Integer)
     weight = db.Column(db.Integer)
     height = db.Column(db.Integer)
-    set = db.Column(db.String(128))
-    reps = db.Column(db.Integer)
-    weights = db.Column(db.Integer)
     volume = db.Column(db.Integer)
+
+    histories = db.relationship('History')
 
     def set_password(self, password):
         self.password = password
@@ -37,9 +35,18 @@ class User(UserMixin, db.Model):
     def check_password(self, password):
         return password == self.password
 
-
     def __repr__(self):
         return '<User {}>'.format(self.username)
+
+class History(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    time = db.Column(db.DateTime, index=True, default=datetime.now())
+    weight = db.Column(db.Integer)
+    set = db.Column(db.String(128))
+    reps = db.Column(db.Integer)
+    weights = db.Column(db.Integer)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+
 
 
 class RegisterForm(FlaskForm):
@@ -52,13 +59,11 @@ class RegisterForm(FlaskForm):
     submit = SubmitField('Sign Up')
 
 
-
 class LoginForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
     remember_me = BooleanField('Remember Me')
     submit = SubmitField('Sign In')
-
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -92,7 +97,8 @@ def register():
         return redirect(url_for('user', username=current_user.username))
     form = RegisterForm()
     if form.validate_on_submit():
-        user = User(username=form.username.data, email=form.email.data, age=form.age.data, weight=form.weight.data, height=form.height.data)
+        user = User(username=form.username.data, email=form.email.data, age=form.age.data, weight=form.weight.data,
+                    height=form.height.data)
         user.set_password(form.password.data)
         db.session.add(user)
         db.session.commit()
@@ -105,19 +111,23 @@ def logout():
     logout_user()
     return redirect('/')
 
+
 @app.route('/user/<username>')
 @login_required
 def user(username):
     user = User.query.filter_by(username=username).first_or_404()
     return render_template('user.html', user=user)
 
+
 @loginManager.user_loader
 def load_user(id):
     return User.query.get(int(id))
 
+
 @loginManager.unauthorized_handler
 def unauthorized_callback():
     return redirect('/')
+
 
 if __name__ == '__main__':
     app.run()
