@@ -7,6 +7,7 @@ from flask_migrate import Migrate
 from flask_login import LoginManager, UserMixin, current_user, login_user, logout_user, login_required
 from config import Config
 from datetime import datetime
+from core import displayData
 
 app = Flask(__name__)
 
@@ -48,6 +49,9 @@ class History(db.Model):
     weights = db.Column(db.Integer)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
+    def __repr__(self):
+        return '<History {}>'.format(self.time)
+
 
 
 class RegisterForm(FlaskForm):
@@ -69,6 +73,9 @@ class LoginForm(FlaskForm):
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    data = db.session.query(History).all()
+    flash(data)
+    flash(displayData(data))
     return render_template('index.html')
 
 

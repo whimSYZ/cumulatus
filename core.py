@@ -2,5 +2,9 @@ import numpy
 import matplotlib
 import math
 import pandas
-from app import User
 
+def displayData(data):
+    result = 0
+    for p in data:
+        result += p.id
+    return result

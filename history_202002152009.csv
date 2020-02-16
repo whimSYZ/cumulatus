@@ -1,4 +1,4 @@
-id,tm,weight,st,reps,weights,user_id
+id,time,weight,sets,reps,weights,user_id
 1,2020-12-23,123,2,23,123,7
 2,2020-12-22,113543,23,233,1323,7
 3,2020-12-12,11334,2,23,123,7
