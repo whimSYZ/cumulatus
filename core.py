@@ -36,7 +36,6 @@ def get_image():
     times = get_times()
     volumes = get_volumes()
     dates = get_dates()
-
     fig = go.Figure(data=go.Scatter(
         x=get_dates(),
         y=get_volumes(),

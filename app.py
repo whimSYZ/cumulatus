@@ -36,9 +36,6 @@ class User(UserMixin, db.Model):
     def check_password(self, password):
         return password == self.password
 
-    def __repr__(self):
-        return '<User {}>'.format(self.username)
-
 
 class History(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -48,9 +45,6 @@ class History(db.Model):
     reps = db.Column(db.Integer)
     weights = db.Column(db.Integer)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
-
-    def __repr__(self):
-        return '<History {}>'.format(self.id)
 
 import core
 
