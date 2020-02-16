@@ -75,12 +75,6 @@ class LoginForm(FlaskForm):
 def index():
     return render_template('index.html')
 
-@app.route('/personal.png')
-def main_plot():
-    """The view for rendering the scatter chart"""
-    img = core.get_image()
-    return send_file(img, mimetype='image/png', cache_timeout=0)
-
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
@@ -126,6 +120,7 @@ def logout():
 @login_required
 def user(username):
     user = User.query.filter_by(username=username).first_or_404()
+    core.get_image()
     return render_template('user.html', user=user)
 
 
