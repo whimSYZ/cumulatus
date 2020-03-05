@@ -9,21 +9,23 @@ import plotly
 import chart_studio.plotly as py
 import plotly.graph_objects as go
 import numpy as np
-
+import os
 
 history = db.session.query(History).all()
 
-def get_volumes():
+def get_volumes(user):
     result = []
     for h in history:
-        result.append(h.weights*h.weights*h.set)
+        if user.id == 1:
+            result.append(h.weights*h.weights*h.set)
     return result
 
 
-def get_times():
+def get_times(user):
     result = []
     for h in history:
-        result.append(datetime.fromtimestamp(h.time/1000))
+        if user.id == 1:
+            result.append(datetime.fromtimestamp(h.time/1000))
     return result
 
 def get_dates():
@@ -32,13 +34,14 @@ def get_dates():
         result.append(datetime.fromtimestamp(h.time/1000).date())
     return result
 
-def get_image():
-    times = get_times()
-    volumes = get_volumes()
+def get_image(user):
+    os.remove('templates/personal.html')
+    times = get_times(user)
+    volumes = get_volumes(user)
     dates = get_dates()
     fig = go.Figure(data=go.Scatter(
         x=get_dates(),
-        y=get_volumes(),
+        y=get_volumes(user),
         mode='lines+markers',
         marker=dict(
             size=16,
@@ -47,4 +50,5 @@ def get_image():
             showscale=True
         )
     ))
-    plotly.offline.plot(fig, filename='/templates/personal.html', output_type='div')
+
+    fig.write_html('templates/personal.html', auto_open=False)
